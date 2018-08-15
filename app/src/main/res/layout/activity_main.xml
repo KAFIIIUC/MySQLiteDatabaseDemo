@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+       android:id="@+id/linearLayoutOne"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name :"
+           android:textSize="20sp"
+           android:textStyle="bold"/>
+
+       <EditText
+           android:id="@+id/nameEditTxt"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:inputType="text"
+           android:hint="Enter your name"
+           android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/linearLayoutOne">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/ageEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="numberDecimal"
+            android:hint="Enter your age"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/linearLayoutTwo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/genderEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:hint="Enter your gender"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+   <!-- only add for update-->
+    <LinearLayout
+        android:id="@+id/linearLayoutFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/linearLayoutThree">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID :"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/idEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:hint="Enter your id"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutFour"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"/>
+
+    <Button
+        android:id="@+id/displayAllDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtnId"
+        android:layout_margin="20dp"
+        android:text="Display All Data"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"/>
+
+    <Button
+        android:id="@+id/updateBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/displayAllDataBtn"
+        android:layout_margin="20dp"
+        android:text="Update Button"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"/>
+
+    <Button
+        android:id="@+id/deleteBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateBtnId"
+        android:layout_margin="20dp"
+        android:text="Delete Button"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="#ffff"/>
+</RelativeLayout>
